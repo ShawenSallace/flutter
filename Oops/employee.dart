@@ -47,11 +47,11 @@ class Employee
 employeeTest()
 {
   Employee e1 = Employee("a", "b", 100), e2 = Employee("c", "d", 150);
-  print("Displaying employee details\n1.${e1.firstName} ${e1.lastName} ${e1.salary}\n2.${e2.firstName} ${e2.lastName} ${e2.salary}");
+  print("Displaying employee details\n1.${e1.firstName} ${e1.lastName} ${(e1.salary)*12}\n2.${e2.firstName} ${e2.lastName} ${(e2.salary)*12}");
   print("Everyone gets their salary raised by 10%!");
   e1.raise(10);
   e2.raise(10);
-  print("Displaying employee details\n1.${e1.firstName} ${e1.lastName} ${e1.salary}\n2.${e2.firstName} ${e2.lastName} ${e2.salary}");
+  print("Displaying employee details\n1.${e1.firstName} ${e1.lastName} ${(e1.salary)*12}\n2.${e2.firstName} ${e2.lastName} ${(e2.salary)*12}");
 }
 void main()
 {
